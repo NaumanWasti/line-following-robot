@@ -1,7 +1,6 @@
-   
    int leftmotorforward     = 3;  
-   int leftmotorbackward      = 6;   //backward not necessary to write
-   int rightmotorforward      = 4; 
+   int leftmotorbackward      = 4;   //backward not necessary to write
+   int rightmotorforward      = 6; 
    int rightmotorbackward      = 5;  //backward not necessary to write
 
    int value1;
@@ -19,8 +18,8 @@ void setup() {
   pinMode(5, OUTPUT);
   pinMode(6, OUTPUT);
 
-  pinMode(left);   //no need to write it (left,INPUT) because analog is always input
-  pinMode(right);
+  pinMode(left,INPUT);   
+  pinMode(right,INPUT);
   Serial.begin(9600);
   
 }
@@ -73,14 +72,3 @@ else
 
  
 }
-
-
-
-
-
-
-
-
-
-
- 
