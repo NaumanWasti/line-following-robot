@@ -1,7 +1,7 @@
    int leftmotorforward     = 3;  
    int leftmotorbackward      = 4;   //backward not necessary to write
-   int rightmotorforward      = 6; 
    int rightmotorbackward      = 5;  //backward not necessary to write
+   int rightmotorforward      = 6; 
 
    int value1;
    int value2;
@@ -20,8 +20,7 @@ void setup() {
 
   pinMode(left,INPUT);   
   pinMode(right,INPUT);
-  Serial.begin(9600);
-  
+
 }
 
 void loop() {
@@ -51,7 +50,7 @@ else if(value1 > 500 && value2 < 500){
 
   }
 
-else if(value1 < 500 && value2 < 500){
+else if(value1 < 500 && value2 < 500)
 {
 
   digitalWrite (3,HIGH);
